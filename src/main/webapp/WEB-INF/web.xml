@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app 
+  xmlns="http://java.sun.com/xml/ns/javaee" 
+  version="2.5" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+ 
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <!-- Static routes -->
+  
+  <servlet>
+    <servlet-name>About</servlet-name>
+    <jsp-file>/WEB-INF/views/about.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>About</servlet-name>
+    <url-pattern>/about</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Contact</servlet-name>
+    <jsp-file>/WEB-INF/views/contact.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Contact</servlet-name>
+    <url-pattern>/contact</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Services</servlet-name>
+    <jsp-file>/WEB-INF/views/services.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Services</servlet-name>
+    <url-pattern>/services</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SearchServices</servlet-name>
+    <jsp-file>/WEB-INF/views/search.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SearchServices</servlet-name>
+    <url-pattern>/search-services</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MyPatients</servlet-name>
+    <jsp-file>/WEB-INF/views/doctor/patients.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MyPatients</servlet-name>
+    <url-pattern>/my-patients-list</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PredictServlet</servlet-name>
+    <jsp-file>/WEB-INF/views/predict.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>PredictServlet</servlet-name>
+    <url-pattern>/predict-services</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Admin routes -->
+  <servlet>
+    <servlet-name>AllDoctors</servlet-name>
+    <jsp-file>/WEB-INF/views/admin/all-doctors.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AllDoctors</servlet-name>
+    <url-pattern>/doctors-list</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AllPatient</servlet-name>
+    <jsp-file>/WEB-INF/views/admin/all-patients.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AllPatient</servlet-name>
+    <url-pattern>/patient-list</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AllDepartment</servlet-name>
+    <jsp-file>/WEB-INF/views/admin/departments.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AllDepartment</servlet-name>
+    <url-pattern>/department-list</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DoctorApplications</servlet-name>
+    <jsp-file>/WEB-INF/views/admin/doctor-applications.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DoctorApplications</servlet-name>
+    <url-pattern>/doctor-applications</url-pattern>
+  </servlet-mapping>
+
+  <!-- Test routes -->
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <jsp-file>/WEB-INF/views/test.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+
+  <!-- Error routes -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/views/error_404.jsp</location>
+  </error-page>
+  
+</web-app>
